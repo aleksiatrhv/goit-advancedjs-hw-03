@@ -2,7 +2,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const galleryContainer = document.querySelector('.gallery');
-const loader = document.querySelector('.loader');
+const loaderContainer = document.querySelector('.loader-container');
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
@@ -60,9 +60,9 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-  loader.classList.remove('hidden');
+  loaderContainer.classList.add('is-active');
 }
 
 export function hideLoader() {
-  loader.classList.add('hidden');
+  loaderContainer.classList.remove('is-active');
 }
