@@ -14,7 +14,7 @@
 
 ## 🌐 Жива сторінка
 
-[Переглянути додаток на GitHub Pages](https://your-username.github.io/goit-advancedjs-hw-03/)
+[Переглянути додаток на GitHub Pages](https://aleksiatrhv.github.io/goit-advancedjs-hw-03/)
 
 ## 🛠️ Технологічний стек
 
