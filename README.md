@@ -12,6 +12,10 @@
 - 🎨 **Мінімалістичний дизайн** із синьо-сірою колірною схемою
 - ✅ **Форматування коду** за допомогою Prettier
 
+## 🌐 Жива сторінка
+
+[Переглянути додаток на GitHub Pages](https://your-username.github.io/goit-advancedjs-hw-03/)
+
 ## 🛠️ Технологічний стек
 
 - **Vite** – висока швидкість збірки проекту
@@ -33,7 +37,7 @@
    npm install
    ```
 
-2. **Заміни API ключ Pixabay** у файлі `src/js/pixabay-api.js`:
+2. **Заміни API ключ Pixabay** у файлі `src/pixabay-api.js`:
    ```javascript
    const API_KEY = 'YOUR_PIXABAY_API_KEY'; // Встав свій ключ з pixabay.com/api/
    ```
@@ -53,21 +57,40 @@
 ## 📁 Структура проекту
 
 ```
+package.json
+README.md
+README.pl.md
+README.ro.md
+README.tr.md
+vite.config.js
+assets/
 src/
-├── js/
-│   ├── main.js                  # Логіка додатку та обробка подій
-│   ├── pixabay-api.js           # HTTP-запити до Pixabay API
-│   └── render-functions.js      # Відображення елементів та управління DOM
-├── css/
-│   ├── styles.css               # Основні стилі (импорти)
-│   ├── gallery.css              # Стилі галереї та спіннера завантаження
-│   ├── search-form.css          # Стилі форми пошуку
-│   └── інші CSS файли
-├── partials/
-│   ├── header.html
-│   ├── footer.html
-│   └── інші HTML компоненти
-└── index.html                   # Основна сторінка
+	index.html
+	main.js
+	page-2.html
+	page-3.html
+	pixabay-api.js
+	render-functions.js
+	css/
+		animations.css
+		back-link.css
+		badges.css
+		base.css
+		container.css
+		footer.css
+		header.css
+		reset.css
+		styles.css
+		vite-promo.css
+	img/
+		webp/
+	partials/
+		back-link.html
+		badges.html
+		footer.html
+		header.html
+		vite-promo.html
+public/
 ```
 
 ## 🎯 API Pixabay
@@ -94,7 +117,23 @@ npm run format       # Форматування коду за допомогою
 npm run format:check # Перевірка наявності потреби у форматуванні
 ```
 
-## 📝 Ліцензія
+## � Розгортання на GitHub Pages
+
+1. **Зроби коміт та пуш у репозиторій:**
+   ```bash
+   git add .
+   git commit -m "Deploy to GitHub Pages"
+   git push origin main
+   ```
+
+2. **Увімкни GitHub Pages** у налаштуваннях репозиторію:
+   - Перейди до Settings → Pages
+   - Обери джерело: "Deploy from a branch"
+   - Вибери гілку `gh-pages` та папку `/ (root)`
+
+3. **Додаток буде доступний** за адресою: `https://your-username.github.io/goit-advancedjs-hw-03/`
+
+## �📝 Ліцензія
 
 ISC
 
